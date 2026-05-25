@@ -17,4 +17,22 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/admin/berita/create', function () {
+        return view('admin.berita.create');
+    })->name('admin.berita.create');
+
+    Route::post('/admin/berita', function () {
+        return back()->with('success', 'Berita berhasil disimpan.');
+    })->name('admin.berita.store');
+
+    Route::get('/admin/program/create', function () {
+        return view('admin.program.create');
+    })->name('admin.program.create');
+
+    Route::post('/admin/program', function () {
+        return back()->with('success', 'Program kerja berhasil disimpan.');
+    })->name('admin.program.store');
+});
+
 require __DIR__.'/auth.php';
