@@ -233,64 +233,202 @@
     <!-- Tujuan -->
     <section id="tujuan" class="section-padding bg-green-950 text-white">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
-            <div class="max-w-3xl">
-                <p class="section-label text-yellow-300">Tujuan PK</p>
-                <h2 class="text-3xl font-black md:text-5xl reveal-item">
-                    Membentuk kader pelajar NU yang religius, nasionalis, mandiri, dan siap berkontribusi.
-                </h2>
+
+            <div class="grid gap-10 lg:grid-cols-2 lg:items-end">
+                <div>
+                    <p class="section-label text-yellow-300">Tujuan PK</p>
+
+                    <h2 class="text-3xl font-black leading-tight md:text-5xl reveal-item">
+                        Membentuk kader pelajar NU yang berakidah kuat, aktif berkhidmah,
+                        dan siap menjadi penggerak kebaikan di kampus.
+                    </h2>
+                </div>
+
+                <div class="rounded-3xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm">
+                    <p class="text-base leading-8 text-green-50">
+                        PK IPNU IPPNU POLIJE hadir sebagai wadah kaderisasi pelajar dan
+                        mahasiswa Nahdlatul Ulama untuk menanamkan nilai Aswaja An-Nahdliyah,
+                        memakmurkan masjid, menguatkan keilmuan, serta menumbuhkan jiwa
+                        kepemimpinan dan pengabdian.
+                    </p>
+                </div>
             </div>
 
-            <div class="mt-12 grid gap-6 md:grid-cols-3">
-                <div class="dark-card">
-                    <span>01</span>
-                    <h3>Menanamkan Aswaja</h3>
-                    <p>Menguatkan pemahaman keislaman Ahlussunnah wal Jamaah An-Nahdliyah.</p>
+            <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+                <div class="group rounded-3xl border border-white/10 bg-white/10 p-7 shadow-lg transition duration-300 hover:-translate-y-2 hover:bg-white/15">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-400 text-lg font-black text-green-950">
+                        01
+                    </span>
+                    <h3 class="mt-6 text-xl font-black text-white">
+                        Menanamkan Aswaja
+                    </h3>
+                    <p class="mt-4 leading-7 text-green-50/80">
+                        Menguatkan pemahaman Islam Ahlussunnah wal Jamaah An-Nahdliyah
+                        melalui kajian, diskusi, dan kegiatan ke-NU-an.
+                    </p>
                 </div>
 
-                <div class="dark-card">
-                    <span>02</span>
-                    <h3>Mengembangkan Potensi</h3>
-                    <p>Mendorong kader agar aktif dalam akademik, organisasi, dan sosial.</p>
+                <div class="group rounded-3xl border border-white/10 bg-white/10 p-7 shadow-lg transition duration-300 hover:-translate-y-2 hover:bg-white/15">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-400 text-lg font-black text-green-950">
+                        02
+                    </span>
+                    <h3 class="mt-6 text-xl font-black text-white">
+                        Memakmurkan Masjid
+                    </h3>
+                    <p class="mt-4 leading-7 text-green-50/80">
+                        Menghidupkan kegiatan keagamaan di masjid, musala, dan lingkungan
+                        kampus melalui ngaji, TPQ, serta amaliyah Nahdliyah.
+                    </p>
                 </div>
 
-                <div class="dark-card">
-                    <span>03</span>
-                    <h3>Membangun Kepemimpinan</h3>
-                    <p>Mencetak kader yang mampu memimpin, berkolaborasi, dan mengabdi.</p>
+                <div class="group rounded-3xl border border-white/10 bg-white/10 p-7 shadow-lg transition duration-300 hover:-translate-y-2 hover:bg-white/15">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-400 text-lg font-black text-green-950">
+                        03
+                    </span>
+                    <h3 class="mt-6 text-xl font-black text-white">
+                        Mengembangkan Potensi
+                    </h3>
+                    <p class="mt-4 leading-7 text-green-50/80">
+                        Mendorong kader agar aktif dalam bidang akademik, organisasi,
+                        sosial, dakwah, dan pengembangan diri.
+                    </p>
                 </div>
+
+                <div class="group rounded-3xl border border-white/10 bg-white/10 p-7 shadow-lg transition duration-300 hover:-translate-y-2 hover:bg-white/15">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-400 text-lg font-black text-green-950">
+                        04
+                    </span>
+                    <h3 class="mt-6 text-xl font-black text-white">
+                        Membangun Kepemimpinan
+                    </h3>
+                    <p class="mt-4 leading-7 text-green-50/80">
+                        Mencetak kader yang berani memimpin, mampu berkolaborasi,
+                        bertanggung jawab, dan siap mengabdi untuk umat.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Visi Misi -->
-    <section id="visi-misi" class="section-padding">
+    <section id="visi-misi" class="section-padding bg-white">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
-            <div class="text-center">
+
+            <div class="mx-auto max-w-3xl text-center">
                 <p class="section-label">Visi Misi</p>
                 <h2 class="section-title">
                     Arah Gerak Organisasi
                 </h2>
+                <p class="mt-5 text-base leading-8 text-slate-600">
+                    Visi dan misi PK IPNU IPPNU POLIJE menjadi pedoman dalam membentuk
+                    kader pelajar NU yang berakidah kuat, aktif berorganisasi, serta
+                    mampu memberi manfaat bagi kampus dan masyarakat.
+                </p>
             </div>
 
-            <div class="mt-12 grid gap-8 lg:grid-cols-2">
-                <div class="reveal-item rounded-[2rem] bg-gradient-to-br from-green-700 to-green-950 p-8 text-white shadow-xl">
-                    <h3 class="text-3xl font-black">Visi</h3>
-                    <p class="mt-5 leading-8 text-green-50">
-                        Terwujudnya PK IPNU IPPNU POLIJE sebagai organisasi pelajar
-                        yang aktif, religius, progresif, dan berdaya guna bagi kampus,
-                        masyarakat, serta Nahdlatul Ulama.
-                    </p>
+            <div class="mt-14 grid gap-8 lg:grid-cols-2 lg:items-stretch">
+
+                <!-- Visi -->
+                <div class="reveal-item relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-green-700 via-green-800 to-green-950 p-8 text-white shadow-xl">
+                    <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-yellow-300/20"></div>
+                    <div class="absolute -bottom-16 -left-16 h-52 w-52 rounded-full bg-white/10"></div>
+
+                    <div class="relative z-10">
+                        <span class="inline-flex rounded-full bg-yellow-400 px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-green-950">
+                            Visi
+                        </span>
+
+                        <h3 class="mt-6 text-3xl font-black leading-tight md:text-4xl">
+                            Terwujudnya kader pelajar NU yang religius, berilmu, berakhlak,
+                            dan siap berkhidmah.
+                        </h3>
+
+                        <p class="mt-6 leading-8 text-green-50">
+                            Menjadikan PK IPNU IPPNU POLIJE sebagai wadah kaderisasi pelajar
+                            dan mahasiswa Nahdlatul Ulama yang aktif dalam mengamalkan
+                            nilai-nilai Aswaja An-Nahdliyah, menghidupkan kegiatan keagamaan,
+                            serta berkontribusi positif bagi kampus, masyarakat, dan NU.
+                        </p>
+                    </div>
                 </div>
 
+                <!-- Misi -->
                 <div class="reveal-item rounded-[2rem] border border-green-100 bg-white p-8 shadow-xl shadow-green-900/5">
-                    <h3 class="text-3xl font-black text-green-900">Misi</h3>
-                    <ul class="mt-5 space-y-4 text-slate-600">
-                        <li class="check-list">Meningkatkan kualitas kaderisasi anggota.</li>
-                        <li class="check-list">Menguatkan kegiatan keagamaan berbasis Aswaja.</li>
-                        <li class="check-list">Mengembangkan program sosial, intelektual, dan kreatif.</li>
-                        <li class="check-list">Membangun relasi positif dengan internal dan eksternal kampus.</li>
-                    </ul>
+                    <span class="inline-flex rounded-full bg-green-100 px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-green-800">
+                        Misi
+                    </span>
+
+                    <h3 class="mt-6 text-3xl font-black text-green-950">
+                        Langkah Perjuangan
+                    </h3>
+
+                    <div class="mt-7 space-y-5">
+
+                        <div class="flex gap-4">
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-700 text-sm font-black text-white">
+                                01
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-950">
+                                    Menguatkan Akidah Aswaja
+                                </h4>
+                                <p class="mt-1 leading-7 text-slate-600">
+                                    Menanamkan pemahaman Islam Ahlussunnah wal Jamaah
+                                    An-Nahdliyah melalui kajian, diskusi, dan amaliyah NU.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-700 text-sm font-black text-white">
+                                02
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-950">
+                                    Menghidupkan Kegiatan Keagamaan
+                                </h4>
+                                <p class="mt-1 leading-7 text-slate-600">
+                                    Berperan aktif dalam memakmurkan masjid, musala, TPQ,
+                                    kegiatan ngaji, serta tradisi keagamaan Nahdliyah.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-700 text-sm font-black text-white">
+                                03
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-950">
+                                    Meningkatkan Kualitas Kader
+                                </h4>
+                                <p class="mt-1 leading-7 text-slate-600">
+                                    Membentuk kader yang aktif, mandiri, bertanggung jawab,
+                                    dan memiliki kemampuan dalam organisasi maupun akademik.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-700 text-sm font-black text-white">
+                                04
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-950">
+                                    Membangun Sinergi dan Pengabdian
+                                </h4>
+                                <p class="mt-1 leading-7 text-slate-600">
+                                    Menjalin hubungan baik dengan kampus, pesantren, alumni,
+                                    dan masyarakat dalam kegiatan kaderisasi, sosial, dan dakwah.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -298,38 +436,113 @@
     <!-- Sejarah -->
     <section id="sejarah" class="section-padding bg-green-50">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
-            <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+            <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+
+                <!-- Kiri -->
                 <div>
                     <p class="section-label">Sejarah</p>
+
                     <h2 class="section-title">
                         Perjalanan PK IPNU IPPNU POLIJE
                     </h2>
+
                     <p class="section-desc">
-                        Sejarah PK IPNU IPPNU POLIJE berawal dari semangat para pelajar
-                        dan mahasiswa Nahdlatul Ulama untuk menghadirkan ruang kaderisasi
-                        di lingkungan Politeknik Negeri Jember.
+                        PK IPNU IPPNU POLIJE berdiri pada tahun 2014 sebagai ruang
+                        berkumpulnya pelajar, mahasiswa, kader IPNU IPPNU, serta santri
+                        Nahdlatul Ulama yang memiliki semangat untuk menghidupkan nilai-nilai
+                        Aswaja dan ke-NU-an di lingkungan Politeknik Negeri Jember.
                     </p>
+
+                    <p class="mt-5 text-base leading-8 text-slate-600">
+                        Pada masa awal berdirinya, organisasi ini banyak bergerak melalui
+                        kegiatan keagamaan di masjid, musala, dan lingkungan sekitar kampus.
+                        Kader-kadernya turut membantu kegiatan mengaji, TPQ, pembacaan
+                        nadoman Aqidatul Awam, serta diskusi isu-isu keislaman dan kebangsaan.
+                    </p>
+
+                    <div class="mt-8 rounded-3xl bg-white p-6 shadow-sm border border-green-100">
+                        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-yellow-600">
+                            Ketua Pertama
+                        </p>
+                        <h3 class="mt-2 text-2xl font-black text-green-950">
+                            Rekan Ardi
+                        </h3>
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Setelah periode awal tersebut, estafet kepemimpinan dilanjutkan
+                            oleh Rekan Sofyan dan kader-kader berikutnya.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="timeline-card">
-                        <span>Awal Berdiri</span>
-                        <h3>Inisiasi Gerakan Pelajar NU</h3>
-                        <p>Dimulai dari forum kecil, diskusi kader, dan kegiatan keagamaan.</p>
-                    </div>
+                <!-- Kanan / Timeline -->
+                <div class="relative">
+                    <div class="absolute left-6 top-4 bottom-4 w-1 rounded-full bg-green-200 hidden sm:block"></div>
 
-                    <div class="timeline-card">
-                        <span>Penguatan Organisasi</span>
-                        <h3>Program Kerja Mulai Terstruktur</h3>
-                        <p>Kegiatan kaderisasi, kajian, dan sosial mulai dijalankan secara rutin.</p>
-                    </div>
+                    <div class="space-y-6">
 
-                    <div class="timeline-card">
-                        <span>Sekarang</span>
-                        <h3>Aktif Berkarya di Kampus</h3>
-                        <p>PK terus bergerak menjadi wadah pengembangan kader IPNU IPPNU POLIJE.</p>
+                        <div class="relative rounded-3xl bg-white p-6 pl-8 shadow-md border border-green-100">
+                            <div class="absolute -left-1 top-7 hidden h-4 w-4 rounded-full bg-green-700 ring-4 ring-green-100 sm:block"></div>
+                            <span class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-600">
+                                2014
+                            </span>
+                            <h3 class="mt-2 text-2xl font-black text-green-950">
+                                Awal Berdiri
+                            </h3>
+                            <p class="mt-3 text-slate-600 leading-7">
+                                Bermula dari beberapa kader IPNU yang aktif di kampung halaman
+                                dan para santri pesantren NU yang kemudian berkumpul, berdiskusi,
+                                serta menggagas gerakan pelajar NU di POLIJE.
+                            </p>
+                        </div>
+
+                        <div class="relative rounded-3xl bg-white p-6 pl-8 shadow-md border border-green-100">
+                            <div class="absolute -left-1 top-7 hidden h-4 w-4 rounded-full bg-green-700 ring-4 ring-green-100 sm:block"></div>
+                            <span class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-600">
+                                Tujuan Awal
+                            </span>
+                            <h3 class="mt-2 text-2xl font-black text-green-950">
+                                Memakmurkan Masjid dan Menguatkan Aswaja
+                            </h3>
+                            <p class="mt-3 text-slate-600 leading-7">
+                                Tujuan awal PK IPNU IPPNU POLIJE adalah memakmurkan masjid,
+                                membumikan ajaran Aswaja di kampus, dan menjadikan kader
+                                sebagai pelajar NU yang aktif dalam kegiatan keagamaan.
+                            </p>
+                        </div>
+
+                        <div class="relative rounded-3xl bg-white p-6 pl-8 shadow-md border border-green-100">
+                            <div class="absolute -left-1 top-7 hidden h-4 w-4 rounded-full bg-green-700 ring-4 ring-green-100 sm:block"></div>
+                            <span class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-600">
+                                Kegiatan Awal
+                            </span>
+                            <h3 class="mt-2 text-2xl font-black text-green-950">
+                                Ngaji, TPQ, dan Kajian Ke-NU-an
+                            </h3>
+                            <p class="mt-3 text-slate-600 leading-7">
+                                Kegiatan awal banyak diisi dengan membantu guru ngaji,
+                                mengajar di musala yang telah ditentukan, TPQ, pembacaan
+                                nadoman Aqidatul Awam, diskusi Aswaja, dan kajian ke-NU-an.
+                            </p>
+                        </div>
+
+                        <div class="relative rounded-3xl bg-white p-6 pl-8 shadow-md border border-green-100">
+                            <div class="absolute -left-1 top-7 hidden h-4 w-4 rounded-full bg-green-700 ring-4 ring-green-100 sm:block"></div>
+                            <span class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-600">
+                                Perkembangan
+                            </span>
+                            <h3 class="mt-2 text-2xl font-black text-green-950">
+                                Bersinergi dengan Kampus dan Pesantren
+                            </h3>
+                            <p class="mt-3 text-slate-600 leading-7">
+                                Dalam perjalanannya, PK IPNU IPPNU POLIJE sering bersinergi
+                                dengan direktur, jajaran kampus, serta pesantren di sekitar
+                                POLIJE dalam kegiatan keagamaan dan penguatan kaderisasi.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -672,17 +885,79 @@
             <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <div class="leader-card">
                     <div class="leader-photo-placeholder">
-                        <span>IP</span>
+                        <img src="{{ asset('images/ketua-ipnu-2014-2015.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2014 - 2015"
+                            class="leader-photo">
                     </div>
-                    <h3>Nama Ketua 1</h3>
-                    <p>Periode 2022 - 2023</p>
+                    <h3>Dr Cand, Muhammad Ardi Wiranata, S.ST., M.Tr.P.</S></h3>
+                    <p>Periode 2014 - 2015</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2016-2017.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2016 - 2017"
+                            class="leader-photo">
+                    </div>
+                    <h3>Sofyan Wanadi</S></h3>
+                    <p>Periode 2016 - 2017</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2017-2018.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2017 - 2018"
+                            class="leader-photo">
+                    </div>
+                    <h3>M.Ridwan</S></h3>
+                    <p>Periode 2017 - 2018</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2018-2019.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2018 - 2019"
+                            class="leader-photo">
+                    </div>
+                    <h3>Muammar Khadafi, S.Tr.P</h3>
+                    <p>Periode 2018 - 2019</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2019-2020.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2019 - 2020"
+                            class="leader-photo">
+                    </div>
+                    <h3>Ainur Rizky</h3>
+                    <p>Periode 2019 - 2020</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2020-2021.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2020 - 20231"
+                            class="leader-photo">
+                    </div>
+                    <h3>Lucky Nurcahya S.</h3>
+                    <p>Periode 2020 - 2021</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder">
+                        <img src="{{ asset('images/ketua-ipnu-2022-2024.png') }}"
+                            alt="Ketua PK IPNU POLIJE Periode 2022 - 2023"
+                            class="leader-photo">
+                    </div>
+                    <h3>Dwi Prasetiyo Utomo</h3>
+                    <p>Periode 2022 - 2024</p>
                 </div>
 
                 <div class="leader-card">
                     <div class="leader-photo-placeholder">
                         <span>IP</span>
                     </div>
-                    <h3>Nama Ketua 2</h3>
+                    <h3>Deni Putra Abdullah</h3>
                     <p>Periode 2023 - 2024</p>
                 </div>
 
@@ -730,18 +1005,72 @@
 
             <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <div class="leader-card">
-                    <div class="leader-photo-placeholder ippnu-placeholder">
-                        <span>PI</span>
+                    <div class="leader-photo-box">
+                        <img src="{{ asset('images/ketua-ippnu-2016-2017.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2016 - 2017"
+                            class="leader-photo">
                     </div>
-                    <h3>Nama Ketua 1</h3>
+                    <h3>Wahyu TrecyIndriani</h3>
+                    <p>Periode 2016 - 2017</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-box">
+                        <img src="{{ asset('images/ketua-ippnu-2017-2018.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2017 - 2018"
+                            class="leader-photo">
+                    </div>
+                    <h3>Putri Ludviani</h3>
+                    <p>Periode 2017 - 2018</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-box">
+                        <img src="{{ asset('images/ketua-ippnu-2018-2019.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2018 - 2019"
+                            class="leader-photo">
+                    </div>
+                    <h3>Qurrota A’yun</h3>
+                    <p>Periode 2018 - 2019</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder ippnu-placeholder">
+                        <img src="{{ asset('images/ketua_ippnu_2020-2021.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2019-2020"
+                            class="leader-photo">
+                    </div>
+                    <h3>Lutfi Kurniawati, S.Tr.Gz</h3>
+                    <p>Periode 2019 - 2020</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder ippnu-placeholder">
+                        <img src="{{ asset('images/ketua_ippnu_2021-2022.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2020-2021"
+                            class="leader-photo">
+                    </div>
+                    <h3>Yafi' Griselda Aprilia Warsono Putri S.Tr.P</h3>
+                    <p>Periode 2020 - 2021</p>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-photo-placeholder ippnu-placeholder">
+                        <img src="{{ asset('images/ketua_ippnu_2022 – 2023.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2022 - 2023"
+                            class="leader-photo">
+                    </div>
+                    <h3>Bening Prastika Utami. S.Tr.P</h3>
                     <p>Periode 2022 - 2023</p>
                 </div>
 
                 <div class="leader-card">
                     <div class="leader-photo-placeholder ippnu-placeholder">
-                        <span>PI</span>
+                        <img src="{{ asset('images/ketua_ippnu_ 2023-2024.png') }}"
+                            alt="Ketua PK IPPNU POLIJE Periode 2023 - 2024"
+                            class="leader-photo">
                     </div>
-                    <h3>Nama Ketua 2</h3>
+                    <h3>Fira Wahyuni, S.Tr.P</h3>
                     <p>Periode 2023 - 2024</p>
                 </div>
 
