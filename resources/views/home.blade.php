@@ -909,7 +909,7 @@
                             alt="Ketua PK IPNU POLIJE Periode 2017 - 2018"
                             class="leader-photo">
                     </div>
-                    <h3>M.Ridwan</S></h3>
+                    <h3>M.Ridwan, S.Tr.P</S></h3>
                     <p>Periode 2017 - 2018</p>
                 </div>
 
