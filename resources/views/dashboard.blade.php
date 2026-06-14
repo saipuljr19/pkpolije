@@ -107,7 +107,7 @@
                                         Total Berita PK
                                     </p>
                                     <h3 class="mt-3 text-4xl font-black text-green-950">
-                                        12
+                                        {{ $jumlahBerita }}
                                     </h3>
                                     <p class="mt-2 text-sm font-semibold text-green-700">
                                         Konten berita aktif
@@ -119,7 +119,7 @@
                                         Program Kerja
                                     </p>
                                     <h3 class="mt-3 text-4xl font-black text-green-950">
-                                        6
+                                        {{ $jumlahProgram }}
                                     </h3>
                                     <p class="mt-2 text-sm font-semibold text-yellow-600">
                                         Program unggulan

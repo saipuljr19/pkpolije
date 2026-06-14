@@ -15,11 +15,16 @@ class ProgramKerjaController extends Controller
 
         $programs = ProgramKerja::latest()->get();
 
+        $jumlahBerita = Berita::count();
+        $jumlahProgram = ProgramKerja::count();
+
         return view(
             'dashboard',
             compact(
                 'beritas',
-                'programs'
+                'programs',
+                'jumlahBerita',
+                'jumlahProgram'
             )
         );
     }
