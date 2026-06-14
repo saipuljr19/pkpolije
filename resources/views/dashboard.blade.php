@@ -153,7 +153,6 @@
                                         <h4 class="text-lg font-black text-green-950">
                                             Berita PK
                                         </h4>
-
                                         <p class="mt-2 text-sm leading-6 text-slate-600">
                                             Berisi dokumentasi kegiatan, nama kegiatan, deskripsi singkat, dan deskripsi lengkap.
                                         </p>
@@ -239,7 +238,7 @@
                                             </tr>
                                         </thead>
 
-                                        <tbody class="divide-y divide-green-100">
+                                        {{-- <tbody class="divide-y divide-green-100">
                                             <tr class="transition hover:bg-yellow-50/60">
                                                 <td class="px-6 py-5">
                                                     <div class="flex -space-x-3">
@@ -320,7 +319,92 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </tbody>
+                                        </tbody> --}}
+
+                                        <tbody class="divide-y divide-green-100">
+
+                                            @forelse($beritas as $berita)
+
+                                            <tr class="transition hover:bg-yellow-50/60">
+
+                                                <!-- Gambar -->
+                                                <td class="px-6 py-5">
+                                                    <div class="flex -space-x-3">
+
+                                                        @foreach($berita->gambar->take(3) as $gambar)
+                                                            <img
+                                                                src="{{ asset('images/berita/' . $gambar->url_gambar) }}"
+                                                                alt="{{ $berita->nama_kegiatan }}"
+                                                                class="h-14 w-14 rounded-2xl object-cover ring-4 ring-white">
+                                                        @endforeach
+
+                                                    </div>
+                                                </td>
+
+                                                <!-- Nama Kegiatan -->
+                                                <td class="px-6 py-5">
+                                                    <p class="font-black text-green-950">
+                                                        {{ $berita->nama_kegiatan }}
+                                                    </p>
+
+                                                    <p class="text-sm text-slate-500">
+                                                        {{ \Carbon\Carbon::parse($berita->tanggal_kegiatan)->translatedFormat('d F Y') }}
+                                                    </p>
+                                                </td>
+
+                                                <!-- Deskripsi -->
+                                                <td class="max-w-xs px-6 py-5 text-sm text-slate-600">
+                                                    {{ Str::limit($berita->deskripsi_singkat, 80) }}
+                                                </td>
+
+                                                <!-- Jumlah Foto -->
+                                                <td class="px-6 py-5">
+                                                    <span class="rounded-full bg-green-100 px-3 py-1 text-xs font-black text-green-800">
+                                                        {{ $berita->gambar->count() }} Foto
+                                                    </span>
+                                                </td>
+
+                                                <!-- Aksi -->
+                                                <td class="px-6 py-5 text-right">
+                                                    <div class="flex justify-end gap-2">
+
+                                                        <a href="{{ route('admin.berita.edit', $berita->id) }}"
+                                                            class="rounded-full bg-yellow-400 px-4 py-2 text-xs font-black text-green-950 transition hover:bg-yellow-500">
+                                                            Edit
+                                                        </a>
+
+                                                        <form id="deleteForm{{ $berita->id }}"
+                                                            action="{{ route('admin.berita.destroy', $berita->id) }}"
+                                                            method="POST">
+
+                                                            @csrf
+                                                            @method('DELETE')
+
+                                                            <button
+                                                                type="button"
+                                                                onclick="hapusBerita({{ $berita->id }})"
+                                                                class="rounded-full bg-red-100 px-4 py-2 text-xs font-black text-red-700 transition hover:bg-red-200">
+                                                                Hapus
+                                                            </button>
+
+                                                        </form>
+
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                            @empty
+
+                                            <tr>
+                                                <td colspan="5" class="px-6 py-10 text-center text-slate-500">
+                                                    Belum ada data berita.
+                                                </td>
+                                            </tr>
+
+                                            @endforelse
+
+                                            </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -381,6 +465,86 @@
                                         </thead>
 
                                         <tbody class="divide-y divide-green-100">
+
+                                            @forelse($programs as $program)
+
+                                            <tr class="transition hover:bg-yellow-50/60">
+
+                                                <!-- Gambar -->
+                                                <td class="px-6 py-5">
+
+                                                    @if($program->gambar_program)
+
+                                                        <img
+                                                            src="{{ asset('images/program/' . $program->gambar_program) }}"
+                                                            alt="{{ $program->nama_program }}"
+                                                            class="h-14 w-14 rounded-2xl object-cover">
+
+                                                    @else
+
+                                                        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100 text-xl">
+                                                            📚
+                                                        </div>
+
+                                                    @endif
+
+                                                </td>
+
+                                                <!-- Nama Program -->
+                                                <td class="px-6 py-5 font-black text-green-950">
+                                                    {{ $program->nama_program }}
+                                                </td>
+
+                                                <!-- Deskripsi -->
+                                                <td class="max-w-md px-6 py-5 text-sm text-slate-600">
+                                                    {{ Str::limit($program->deskripsi_program, 100) }}
+                                                </td>
+
+                                                <!-- Aksi -->
+                                                <td class="px-6 py-5 text-right">
+
+                                                    <div class="flex justify-end gap-2">
+
+                                                        <a href="{{ route('admin.program.edit', $program->id) }}"
+                                                        class="rounded-full bg-yellow-400 px-4 py-2 text-xs font-black text-green-950 transition hover:bg-yellow-500">
+                                                            Edit
+                                                        </a>
+
+                                                        <form id="deleteProgram{{ $program->id }}"
+                                                            action="{{ route('admin.program.destroy', $program->id) }}"
+                                                            method="POST">
+
+                                                            @csrf
+                                                            @method('DELETE')
+
+                                                            <button
+                                                                type="button"
+                                                                onclick="hapusProker({{ $program->id }})"
+                                                                class="rounded-full bg-red-100 px-4 py-2 text-xs font-black text-red-700 transition hover:bg-red-200">
+                                                                Hapus
+                                                            </button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+
+                                            @empty
+
+                                            <tr>
+                                                <td colspan="4" class="px-6 py-10 text-center text-slate-500">
+                                                    Belum ada data program kerja.
+                                                </td>
+                                            </tr>
+
+                                            @endforelse
+
+                                        </tbody>
+
+                                        {{-- <tbody class="divide-y divide-green-100">
                                             <tr class="transition hover:bg-yellow-50/60">
                                                 <td class="px-6 py-5">
                                                     <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100 text-xl">
@@ -436,7 +600,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                        </tbody>
+                                        </tbody> --}}
                                     </table>
                                 </div>
                             </div>
@@ -545,4 +709,52 @@
             });
         });
     </script>
+
+    @push('scripts')
+        <script>
+        function hapusBerita(id) {
+
+            Swal.fire({
+                title: 'Hapus Berita?',
+                text: 'Data yang dihapus tidak dapat dikembalikan.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#166534',
+                cancelButtonColor: '#dc2626',
+                confirmButtonText: 'Ya, Hapus',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    document.getElementById('deleteForm' + id).submit();
+                }
+
+            });
+        }
+        </script>
+        @endpush
+
+        @push('scripts')
+        <script>
+        function hapusProker(id) {
+
+            Swal.fire({
+                title: 'Hapus Program Kerja?',
+                text: 'Data yang dihapus tidak dapat dikembalikan.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#166534',
+                cancelButtonColor: '#dc2626',
+                confirmButtonText: 'Ya, Hapus',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    document.getElementById('deleteProgram' + id).submit();
+                }
+
+            });
+        }
+        </script>
+        @endpush
 </x-app-layout>

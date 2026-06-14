@@ -172,6 +172,11 @@
                                 @endif
                             </div>
 
+                            <p class="mt-6 text-center text-sm text-slate-500">
+                                Belum memiliki akun?
+                                Hubungi Admin untuk mendapatkan akses.
+                            </p>
+
                             <!-- Button -->
                             <button
                                 type="submit"
